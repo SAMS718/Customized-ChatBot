@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-genai.configure(api_key='AIzaSyDmtoD_Bog2Vok778gO428THryZ3cKO8es')
+genai.configure(api_key='YOUR API KEY')
 model = genai.GenerativeModel('gemini-pro')
 
 @app.route('/')
@@ -22,3 +22,4 @@ def ask():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
